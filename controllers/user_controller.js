@@ -57,7 +57,7 @@ const loginUser = asyncHandler(async (req, res) => {
           id: user.id,
         },
       },
-      process.env.ACCESS_TOKEN_SECERT,
+      "mcq_topper",
       { expiresIn: "15m" }
     );
     console.log(accessToken);
